@@ -1,0 +1,6 @@
+- Data Models
+  - users : user_id, user_name, image_link, phone_number, last_seen_timestamp
+  - message : {message_id, message_content:{}, message_type:{text}, metadata_columns, source_user_id, target_type(user/group), target_id}
+  - groups {group_id, group_name, count(optional), group_profile_link, last_message, created_by_user_id, created_timestamp}
+  - group_user {group_id, user_id, isAdmin}
+  - assets {asset_id, asset_hash, asset_type(image/gif/video}, asset_owner_id, asset_location, upload_timestamp}
